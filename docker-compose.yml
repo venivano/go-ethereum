@@ -1,0 +1,13 @@
+version: "2.29" 
+
+services:
+  ethereum:
+    image: ghcr.io/venivano/go-ethereum:latest
+    ports:
+      - "8545:8545"
+    networks:
+      - devnet    
+
+networks:
+  devnet:
+    driver: bridge
