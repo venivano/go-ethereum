@@ -46,9 +46,15 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: ./hardhat-tutorial
 
       - name: Compile Hardhat project
         run: npx hardhat compile
+        working-directory: ./hardhat-tutorial
+
+      - name: Deploy Smart Contracts
+        run: npx hardhat ignition deploy ./hardhat-tutorial/ignition/modules/Token.js   
+        working-directory: ./hardhat-tutorial   
 
 #      - name: Build and push Docker image          
 #        id: push
