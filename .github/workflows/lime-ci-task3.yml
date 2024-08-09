@@ -38,6 +38,7 @@ jobs:
         uses: hoverkraft-tech/compose-action@v2.0.1
         with:
           compose-file: "./docker-compose.yml"
+          services: ethereum
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
@@ -63,3 +64,9 @@ jobs:
           context: .
           push: true
           tags: ${{ env.REGISTRY }}/${{ github.repository }}:contracts
+
+      - name: Run docker-compose
+        uses: hoverkraft-tech/compose-action@v2.0.1
+        with:
+          compose-file: "./docker-compose.yml"
+          services: smart-contracts            
