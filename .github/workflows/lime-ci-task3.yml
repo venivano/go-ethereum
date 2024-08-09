@@ -53,7 +53,7 @@ jobs:
         working-directory: ./hardhat-tutorial
 
       - name: Deploy Smart Contracts
-        run: npx hardhat run ignition/modules/Token.js/Token.js
+        run: npx hardhat run ignition/modules/Token.js
         working-directory: ./hardhat-tutorial   
 
 #      - name: Build and push Docker image          
