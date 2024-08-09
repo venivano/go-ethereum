@@ -3,6 +3,12 @@ version: "2.29"
 services:
   ethereum:
     image: ghcr.io/venivano/go-ethereum:latest
+    command:
+      - /bin/sh
+      - -c
+      - |
+          echo "sleep for 5 minutes"
+          sleep 300 
     ports:
       - "8545:8545"
     networks:
