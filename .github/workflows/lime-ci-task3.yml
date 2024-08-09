@@ -1,5 +1,5 @@
 #
-name: Create and publish a Docker image
+name: Deploys the Sample Hardhat Project creates a new Docker image
 
 on:
   pull_request:
@@ -34,10 +34,13 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GH_TOKEN }}
 
-      - name: Build and push Docker image
-        id: push
-        uses: docker/build-push-action@f2a1d5e99d037542a71f64918e516c093c6f3fc4
+      - name: Run docker-compose
+        uses: hoverkraft-tech/compose-action@v2.0.1
         with:
-          context: .
-          push: true
-          tags: ${{ env.REGISTRY }}/${{ github.repository }}:latest
+          compose-file: "./docker-compose.yml"
+#        id: push
+#        uses: docker/build-push-action@f2a1d5e99d037542a71f64918e516c093c6f3fc4
+#        with:
+#          context: .
+#          push: true
+#          tags: ${{ env.REGISTRY }}/${{ github.repository }}:latest
