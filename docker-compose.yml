@@ -6,7 +6,13 @@ services:
     ports:
       - "8545:8545"
     networks:
-      - devnet    
+      - devnet
+  smart-contracts:
+    image: ghcr.io/venivano/go-ethereum:contracts
+    ports:
+      - "8546:8546"
+    networks:
+      - devnet         
 
 networks:
   devnet:
