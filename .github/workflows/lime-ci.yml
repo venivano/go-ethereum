@@ -16,7 +16,7 @@ env:
 
 jobs:
   build-and-push-image:
-    if: github.event.pull_request.merged == true && contains(github.event.pull_request.labels.*.name, 'CI:Deploy')
+    if: github.event.pull_request.merged == true && contains(github.event.pull_request.labels.*.name, 'CI:Build')
     runs-on: self-hosted
     permissions:
       contents: read
