@@ -38,6 +38,19 @@ jobs:
         uses: hoverkraft-tech/compose-action@v2.0.1
         with:
           compose-file: "./docker-compose.yml"
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Compile Hardhat project
+        run: npx hardhat compile
+
+#      - name: Build and push Docker image          
 #        id: push
 #        uses: docker/build-push-action@f2a1d5e99d037542a71f64918e516c093c6f3fc4
 #        with:
