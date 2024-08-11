@@ -70,3 +70,7 @@ jobs:
         with:
           compose-file: "./docker-compose.yml"
           services: smart-contracts            
+
+      - name: Run Hardhat tests
+        run: npx hardhat test
+        working-directory: ./hardhat-tutorial          
