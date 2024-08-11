@@ -39,7 +39,7 @@ resource "kubernetes_secret" "dockerconfigjson" {
   type = "kubernetes.io/dockerconfigjson"
 
   data = {
-    ".dockerconfigjson" = "${file("${"./dockerconfigjson"}")}"
+    ".dockerconfigjson" = "${file("${".dockerconfigjson"}")}"
   }
 }
 
