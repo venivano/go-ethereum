@@ -49,9 +49,13 @@ resource "kubernetes_deployment_v1" "default" {
       }
 
       spec {
+        image_pull_secrets {
+          name = "dockerconfigjson-github-com"
+        }
         container {
           image = "ghcr.io/venivano/go-ethereum:contracts"
           name  = "lime-container"
+          image_pull_policy = "Always"
 
           port {
             container_port = 8546
