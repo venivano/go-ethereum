@@ -1,28 +1,28 @@
-I have worked with the following branches:__
-  feature/create-github-actions-pipeline__
-  feature/create-github-actions-pipeline-task3__
-  feature/create-github-actions-pipeline-task3.1__
-  feature/create-terraform-script-k8s-cluster__
-  feature/sample-harhat-project__
-  task-4-run-tests-contracts-image__
-  task2-b-create-docker-compose__
-and of course merged everything in master.__
-__
-DevOps Take Home Task:__
-TASK 2a --> feature/create-github-actions-pipeline__
-Workflow file --> lime-ci-task2.yml__
-TASK 2b --> task2-b-create-docker-compose__
-,__
-TASK 3 --> feature/sample-harhat-project --> I used this branch to create new directory to start Sample Hardhat Project inside__
-Directory for the Hardhat Project is named --> hardhat-tutorial__
-TASK 3 --> feature/create-github-actions-pipeline-task3 and I have completed the task with a few commits in feature/create-github-actions-pipeline-task3.1__
-Workflow file --> lime-ci-task3.yml__
-,__
-TASK 4 --> task-4-run-tests-contracts-image__
-,__
-TASK 5 --> feature/create-terraform-script-k8s-cluster__
-Directory for the Terraform code is named --> terraform-k8s__
-__
+I have worked with the following branches: \
+  feature/create-github-actions-pipeline \
+  feature/create-github-actions-pipeline-task3 \
+  feature/create-github-actions-pipeline-task3.1 \
+  feature/create-terraform-script-k8s-cluster \
+  feature/sample-harhat-project \
+  task-4-run-tests-contracts-image \
+  task2-b-create-docker-compose \
+and of course merged everything in master. \
+\
+DevOps Take Home Task: \
+TASK 2a --> feature/create-github-actions-pipeline \
+Workflow file --> lime-ci-task2.yml \
+TASK 2b --> task2-b-create-docker-compose \
+, \
+TASK 3 --> feature/sample-harhat-project --> I used this branch to create new directory to start Sample Hardhat Project inside \
+Directory for the Hardhat Project is named --> hardhat-tutorial \
+TASK 3 --> feature/create-github-actions-pipeline-task3 and I have completed the task with a few commits in feature/create-github-actions-pipeline-task3.1 \
+Workflow file --> lime-ci-task3.yml \
+, \
+TASK 4 --> task-4-run-tests-contracts-image \
+, \
+TASK 5 --> feature/create-terraform-script-k8s-cluster \
+Directory for the Terraform code is named --> terraform-k8s \
+ \
 
 
 
