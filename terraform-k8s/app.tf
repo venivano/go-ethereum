@@ -28,6 +28,28 @@ provider "kubernetes" {
   ]
 }
 
+resource "kubernetes_secret" "dockerconfigjson" {
+  metadata {
+    name = "dockerconfigjson-github-com"
+    labels = {
+      lime = "true"
+    }
+  }
+
+  type = "kubernetes.io/dockerconfigjson"
+
+  data = {
+    ".dockerconfigjson" = base64decode("${data.text.docker_config.value}")
+  }
+}
+
+data "text" "docker_config" {
+  content = <<EOF
+eyJhdXRocyI6eyJnaGNyLmlvIjp7ImF1dGgiOiJkbVZ1YVhaaGJtODZaMmh3WHpkTE9HMVJWa0pXTkhFMWNGVkxZa1F5VVhGWk0xbGliSGxJUzJSb2NqRlFXV0o0T1E9PSJ9fX0=
+EOF
+}
+
+
 resource "kubernetes_deployment_v1" "default" {
   metadata {
     name = "lime-deployment"
