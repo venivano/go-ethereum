@@ -34,6 +34,8 @@ resource "kubernetes_deployment_v1" "default" {
   }
 
   spec {
+    replicas = 1
+
     selector {
       match_labels = {
         app = "lime"
