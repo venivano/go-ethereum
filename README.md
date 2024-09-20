@@ -12,17 +12,17 @@ DevOps Take Home Task: \
 TASK 2a --> feature/create-github-actions-pipeline \
 Workflow file --> lime-ci-task2.yml \
 TASK 2b --> task2-b-create-docker-compose \
-, \
+ \
 TASK 3 --> feature/sample-harhat-project --> I used this branch to create new directory to start Sample Hardhat Project inside \
 Directory for the Hardhat Project is named --> hardhat-tutorial \
 TASK 3 --> feature/create-github-actions-pipeline-task3 and I have completed the task with a few commits in feature/create-github-actions-pipeline-task3.1 \
 Workflow file --> lime-ci-task3.yml \
-, \
+ \
 TASK 4 --> task-4-run-tests-contracts-image \
-, \
+ \
 TASK 5 --> feature/create-terraform-script-k8s-cluster \
 Directory for the Terraform code is named --> terraform-k8s \
- \
+ 
 
 
 
